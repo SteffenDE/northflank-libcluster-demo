@@ -4,12 +4,9 @@ defmodule LibclusterExample.Application do
 
   @impl true
   def start(_type, _args) do
-    # Load topologies from config
-    topologies = Application.get_env(:libcluster, :topologies) || []
-
     children = [
-      # Start the Cluster Supervisor
-      {Cluster.Supervisor, [topologies, [name: LibclusterExample.ClusterSupervisor]]},
+      {DNSCluster,
+       query: Application.get_env(:libcluster_example, :dns_cluster_query) || :ignore},
       # Periodically log connected nodes
       LibclusterExample.ClusterLogger
       # ... other children

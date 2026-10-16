@@ -1,0 +1,3 @@
+%{
+  "dns_cluster": {:hex, :dns_cluster, "0.3.1", "b4e707e4ddaf0d3f13580ee7dc4ab0e685f7f7f5bbe90e84535524bc12d1cf3e", [:mix], [], "hexpm", "afa60bbbd84463e977eeeecc0c564d8c5ddea260beccdb8d5f45cbb860846627"},
+}

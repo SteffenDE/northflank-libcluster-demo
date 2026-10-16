@@ -22,7 +22,7 @@ defmodule LibclusterExample.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:libcluster, "~> 3.3"}
+      {:dns_cluster, "~> 0.3"}
     ]
   end
 end
